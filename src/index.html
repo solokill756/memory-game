@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container" class="flex flex-col items-center gap-2">
+      <h1 class="text-4xl font-bold text-purple-700 mb-2">Memory Game</h1>
+      <div class="flex gap-2 mb-2">
+        <button
+          id="easy-btn"
+          class="px-3 py-1 rounded bg-green-200 hover:bg-green-400 font-semibold"
+        >
+          Easy
+        </button>
+        <button
+          id="medium-btn"
+          class="px-3 py-1 rounded bg-yellow-200 hover:bg-yellow-400 font-semibold"
+        >
+          Medium
+        </button>
+        <button
+          id="hard-btn"
+          class="px-3 py-1 rounded bg-red-200 hover:bg-red-400 font-semibold"
+        >
+          Hard
+        </button>
+      </div>
+      <div id="score" class="mb-1">Score: 0</div>
+      <div id="best-score" class="mb-1">Best Score: 0</div>
+      <div id="timer" class="mb-2 text-lg font-semibold">Time: 0s</div>
+      <div id="game-board"></div>
+    </div>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

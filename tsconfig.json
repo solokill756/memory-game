@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    // **File Layout** (Cấu trúc thư mục)
+    "rootDir": "./src", // Chỉ định thư mục chứa mã nguồn TypeScript
+    "outDir": "./src", // Đường dẫn xuất ra các file JavaScript đã biên dịch
+
+    // **Environment Settings** (Cài đặt môi trường)
+    "module": "ESNext", // Dùng cho Node.js với ES Module, có thể thay "commonjs" nếu cần hỗ trợ module cũ
+    "target": "esnext", // Chọn phiên bản ECMAScript mục tiêu, esnext sẽ biên dịch các tính năng mới nhất
+    "types": ["node"], // Cung cấp kiểu cho Node.js nếu bạn đang làm việc với Node.js
+    "lib": ["esnext", "dom"], // Cung cấp các thư viện cho các tính năng ECMAScript mới nhất
+
+    // **Other Outputs** (Các đầu ra khác)
+    // "sourceMap": true, // Tạo file .map để dễ dàng debug
+    // "declaration": true, // Tạo file .d.ts (declaration file) cho các kiểu TypeScript
+    // "declarationMap": true, // Tạo bản đồ .d.ts giúp tìm kiếm dễ dàng hơn khi debug
+
+    // **Stricter Typechecking Options** (Kiểm tra kiểu nghiêm ngặt)
+    "noUncheckedIndexedAccess": true, // Giúp kiểm tra các chỉ mục mà không có kiểu xác định
+    "exactOptionalPropertyTypes": true, // Kiểm tra chính xác các thuộc tính tùy chọn (optional properties)
+
+    // **Style Options** (Tùy chọn về kiểu code)
+    "noImplicitReturns": true, // Báo lỗi nếu hàm không trả về giá trị ở tất cả các nhánh
+    "noImplicitOverride": true, // Báo lỗi nếu override phương thức mà không ghi rõ @override
+    "noUnusedLocals": true, // Báo lỗi nếu có biến local không được sử dụng
+    "noUnusedParameters": true, // Báo lỗi nếu có tham số không được sử dụng
+    "noFallthroughCasesInSwitch": true, // Báo lỗi nếu có trường hợp switch không có break
+    "noPropertyAccessFromIndexSignature": true, // Cấm truy cập thuộc tính qua index signature (chỉ dùng key cụ thể)
+
+    // **Recommended Options** (Các tùy chọn khuyến nghị)
+    "strict": true, // Bật tất cả các tùy chọn kiểm tra kiểu nghiêm ngặt
+    "jsx": "react-jsx", // Nếu dùng React, sử dụng JSX mới (với React 17 trở lên)
+    "verbatimModuleSyntax": true, // Duy trì cú pháp module nguyên bản
+    "isolatedModules": true, // Chế độ module riêng biệt, phù hợp khi dùng với công cụ như Babel
+    "noUncheckedSideEffectImports": true, // Giúp tránh các import có side effect mà không được kiểm tra
+    "moduleDetection": "force", // Xác định luôn kiểu module mà không cần tự động phát hiện
+    "skipLibCheck": true // Bỏ qua kiểm tra các thư viện, giúp biên dịch nhanh hơn
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
