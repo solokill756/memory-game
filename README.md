@@ -1,10 +1,9 @@
+# memory-game
 
-# Project Title
-
-A brief description of what this project does and who it's for
-
+● Đây là một trò chơi rèn luyện trí nhớ.
+● Người chơi phải tìm ra các cặp thẻ giống nhau bằng cách lật từng thẻ trên bànchơi.
+● Trò chơi kết thúc khi tất cả các cặp thẻ đã được tìm thấy.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+![App Screenshot](/assets/images/demo.png)
